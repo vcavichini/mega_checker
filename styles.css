@@ -1,0 +1,75 @@
+/* Estilos personalizados para os círculos */
+.numeros-container, .apostas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.numero {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.acerto, .sorteado {
+    background-color: #28a745; /* Verde para acertos e números sorteados */
+    color: #fff;
+}
+
+.aposta-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 100%; /* Garante que cada aposta ocupe uma linha inteira */
+}
+
+/* Ajustes para o layout */
+#concurso-info {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+#navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Tela de erro */
+#tela-erro {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+    .numero {
+        width: 35px; /* Círculos ainda menores para telas pequenas */
+        height: 35px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.3em; /* Título menor para telas pequenas */
+    }
+
+    #concurso-info p {
+        font-size: 0.9em; /* Fonte menor para informações do concurso */
+    }
+}

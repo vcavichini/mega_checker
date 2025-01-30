@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferir Resultados da Mega-Sena</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Tela principal -->
+        <div id="tela-principal">
+            <h1>Conferir Resultados da Mega-Sena</h1>
+            <div id="concurso-info">
+                <p>Concurso: <strong id="concurso-numero">-</strong></p>
+                <p>Data: <strong id="concurso-data">-</strong></p>
+            </div>
+            <div id="resultados">
+                <h2>Números Sorteados</h2>
+                <div id="numeros-sorteados" class="numeros-container"></div>
+            </div>
+            <div id="apostas">
+                <h2>Suas Apostas</h2>
+                <div id="lista-apostas" class="apostas-container"></div>
+            </div>
+            <div id="navegacao">
+                <button id="anterior" class="secondary">Anterior</button>
+                <button id="proximo">Próximo</button>
+            </div>
+        </div>
+
+        <!-- Tela de erro -->
+        <div id="tela-erro" class="hidden">
+            <h1>Erro</h1>
+            <p>O concurso pode não estar disponível ainda.</p>
+            <button id="voltar" class="secondary">Voltar</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
