@@ -37,8 +37,9 @@
 
 /* Ajustes para o layout */
 #concurso-info {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 1.1em;
+    justify-content: center;
 }
 
 #navegacao {
